@@ -65,11 +65,8 @@ def interactive_pie(st, year):
         pie_string.append(pie_data_dict)
     return jsonify(pie_string)
 
-# if __name__ == '__main__':
-app.run(debug=False)
-
-
-# In[ ]:
+if __name__ == '__main__':
+    app.run(debug=False)
 
 
 
