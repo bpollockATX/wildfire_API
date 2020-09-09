@@ -8,14 +8,14 @@ from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, func, inspect, MetaData, Table, Column
 from flask import Flask, jsonify
-import config #import user, password
+# import config #import user, password
 
 # Create engine, automap and session
 # db Setup
-engine = create_engine(f'postgres://{config.user}:{config.password}@ec2-52-22-216-69.compute-1.amazonaws.com:5432/d5qr295as59lsj')
-base = automap_base()
-base.prepare(engine, reflect=True)
-session = Session(engine)
+# engine = create_engine(f'postgres://{config.user}:{config.password}@ec2-52-22-216-69.compute-1.amazonaws.com:5432/d5qr295as59lsj')
+# base = automap_base()
+# base.prepare(engine, reflect=True)
+# session = Session(engine)
 
 
 fire_table = base.classes.fires_2013_2017
